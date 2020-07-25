@@ -1,0 +1,112 @@
+/*importing the required fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap');
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+a:link
+{
+  color: #2eb895;
+}
+
+a:visited
+{
+  color: #2eb895;
+}
+a:hover
+{
+  color: #d1ab13;
+}
+
+a:active
+{
+  color: #d44242
+}
+
+
+/*for hyperlinks*/
+
+
+
+.st
+{
+  font-family: 'Montserrat', sans-serif;
+  color: #f5653d;
+}
+
+.hea
+{
+  font-family: Product Sans;
+  font-size: 22pt; 
+  font-weight: bold;
+  color:#a1eb4d
+}
+
+
+.form_text
+{
+  font-family: 'Roboto Sans', sans-serif;
+  font-size: 12pt;
+  background-color: #cfccca;
+  border: solid;
+  border-color: #1196d9;
+  align-self: right;
+}
+
+.form_submit
+{
+  font-family: 'Product Sans';
+  font-size: 14pt;
+  background-color:  #3877f8;
+  color: #faf8f6;
+  align-self: right;
+}
+
+/*Text Styles*/
+
+
+.nav
+{
+  background-color: #333;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+
+.nav a {
+  float: left;
+  color: #f5653d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.nav a:active {
+  background-color:  #2eb895;
+  color: #f5653d;
+}
+
+.nav .current
+{
+   background-color: #f5653d;
+  color: white;
+}
+/*Navigation Bar*/
