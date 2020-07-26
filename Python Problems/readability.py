@@ -1,4 +1,4 @@
-from cs50 import get_string
+                                                                                                                                              from cs50 import get_string
 letter=0
 sentence=0
 word=0
