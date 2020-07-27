@@ -67,9 +67,14 @@ a:active
     align-self: right;
 }
 
-div .info
+.info
 {
-    
+  width: 800px;
+  padding: 5px ;
+  border: 3px solid #d1d1d1;
+  background-color: #fcf6f5ff;
+  color: #2bae66ff;
+  font-weight: 500;
 }
 
 /*Text Styles*/
