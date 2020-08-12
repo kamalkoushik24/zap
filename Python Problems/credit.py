@@ -2,8 +2,6 @@ from cs50 import get_int
 import sys
 
 
-
-
 def main():
     while True:
         ccn = get_int("Number: ")
@@ -27,7 +25,7 @@ def checksum(ccn):
             odd = 2 * (ccn % 10)
             sum += odd // 10 + odd % 10
 
-        cc //= 10
+        ccn //= 10
 
     sum % 10 == 0
 
