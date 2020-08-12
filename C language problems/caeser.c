@@ -19,7 +19,7 @@ int main(int argc, string argv[])
 
   for (int i = 0; i < len; i++)
   {
-    char c = plaintext[i;]
+    char c = plaintext[i];
     if (isalpha(c))
     {
       char n = 'A';
@@ -32,12 +32,12 @@ int main(int argc, string argv[])
       printf("%c", c);
     }
   }
-  printf("\n")
+  printf("\n");
 }
 
 bool key_validity(string x)
 {
-  int l = strlen(x)
+  int l = strlen(x);
   for (int i = 0; i < l; i++)
   {
    if (!isdigit(x[i]))
