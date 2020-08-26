@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+int main(void)
+
+
+{
+
+
+    string text = get_string("Enter the Text:"); //prompting for text
+    int words = 1;
+    int sentences = 0;
+    int letters = 0;
+
+    for (int i = 0; i < strlen(text); i++)  //initializing the loop for counting word, letters, sentences
+    {
+        if (isalpha(text[i]))
+        {
+            letters++;   //getting the number of letters
+        }
+        else if ((text[i] == 0 && text[i] != ' ') || (i != strlen(text) - 1 && text[i] == ' ' && text[i + 1] != ' '))
+        {
+            words++; //counting the number of words
+        }
+        else if (text[i] == '.' || text[i] == '?' || text[i] == '!')
+        {
+            sentences++; //counting the number of sentences
+        }
+
+    }
+
+
+    float L = ((float)letters / (float)words) * 100;    //getting the value of L
+    float S = ((float)sentences / (float)words) * 100;  //getting the value of S
+
+    int index = round((0.0588 * L) - (0.296 * S) - 15.8); //applying the algorithm.
+
+    if (index <= 1)
+    {
+
+        printf("Before Grade 1\n");
+
+    }
+    else if (index >= 16)
+    {
+        //printing the grade of the text
+        printf("Grade 16+\n");
+    }
+
+    else
+    {
+        printf("Grade %i\n", index);
+    }
+
+}
