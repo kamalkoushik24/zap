@@ -3,11 +3,12 @@
 int main(void)
 {
     int n, r, c;
-    do
-    {
-        n = get_int("Please enter the height of the pyramid (from 1 to 8):");
-    }
-    while (n < 1 || n > 8);
+   do
+   {
+       n = get_int("Enter the change in USD: ");
+   } while (n < 1 || n > 8);
+   
+   
 
 //Prompting the user for the height
 
