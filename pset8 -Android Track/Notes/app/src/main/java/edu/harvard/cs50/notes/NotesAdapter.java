@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -19,7 +18,6 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
     public static class NoteViewHolder extends RecyclerView.ViewHolder{
         LinearLayout containerView;
         TextView textView;
-        private Button delbtn;
 
         NoteViewHolder(View view) {
             super(view);
@@ -69,12 +67,9 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
 
 
     public void reload(){
-        notes = MainActivity.noteDatabase.noteDao().getallNotes();
+        notes = MainActivity.noteDatabase.noteDao().getAllNotes();
         notifyDataSetChanged();
     }
 
-    public Note getNotePos(int position){
-        return notes.get(position);
-    }
 
 }

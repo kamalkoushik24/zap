@@ -12,7 +12,7 @@ public interface NoteDao {
     void create();
 
     @Query("SELECT * FROM notes")
-    List<Note> getallNotes();
+    List<Note> getAllNotes();
 
     @Query("UPDATE notes SET contents = :contents WHERE id = :id")
     void save(String contents, int id);
