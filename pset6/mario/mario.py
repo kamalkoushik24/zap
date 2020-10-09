@@ -15,3 +15,4 @@ for i in range(h):
         print("#", end="")  # printing the second set of hashes
     print("")  # p rinting a new line
 
+    print("hello")
